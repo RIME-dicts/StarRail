@@ -11,7 +11,7 @@ downloader = Downloader(downloadFile)
 downloader.getAll()
 info = {
     "name": "starrail",
-    "version": "2024-11-27",
+    "version": "2025-04-08",
     "sort": "by_weight"
 }
 print(info)
