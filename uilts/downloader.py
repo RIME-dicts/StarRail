@@ -50,14 +50,14 @@ class Downloader:
                     title: str = re.sub(reg, "", item.get("title"))
                     
                     # 统一符号
-                    title = title.replace('·', '•')
-                    title = title.replace('・', '•')
+                    title = title.replace('•', '·')
+                    title = title.replace('・', '·')
                     
                     self.dict_item.add(title)
                     count+=1
                     
                     # 拆分词条
-                    splitChar :List[str] = [' ', '•', '，']
+                    splitChar :List[str] = [' ', '·', '，']
                     for char in splitChar:
                         if title.find(char) > -1:
                             for word in title.split(char):
